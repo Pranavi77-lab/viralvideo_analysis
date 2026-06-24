@@ -1,0 +1,20 @@
+{
+  "name": "@caffeine/template-app",
+  "type": "module",
+
+  "scripts": {
+    "build": "npm --prefix ./src/frontend run build",
+    "typecheck": "npm --prefix ./src/frontend run typecheck",
+    "check": "npm --prefix ./src/frontend run check",
+    "fix": "npm --prefix ./src/frontend run fix",
+    "bindgen": "caffeine-bindgen --did-file ./src/backend/dist/backend.did --out-dir ./src/frontend/src --actor-interface-file --force"
+  },
+
+  "devDependencies": {
+    "sharp": "^0.34.4"
+  },
+
+  "dependencies": {
+    "@caffeineai/core-infrastructure": "^0.3.0"
+  }
+}
